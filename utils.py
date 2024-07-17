@@ -16,6 +16,7 @@ from database.users_chats_db import db
 from database.join_reqs import JoinReqs
 from bs4 import BeautifulSoup
 from shortzy import Shortzy
+from info import AUTH_CHANNEL, POST_SHORT_API, POST_SHORT_URL, POST_MODE, DIRECT_GEN, DIRECT_GEN_URL, DIRECT_GEN_DB, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, IS_SHORTLINK, LOG_CHANNEL, TUTORIAL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
