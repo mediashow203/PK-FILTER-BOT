@@ -144,17 +144,6 @@ RENAME_MODE = bool(environ.get('RENAME_MODE', False)) # Set True or False
 # Auto Approve Info : If True Then Bot Approve New Upcoming Join Request Else Not
 AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', True)) # Set True or False
 
-#Newfeatures vars developer - Anshvachhani99 ✨🌸
-DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1001740524004"))
-DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "https://roxylinkzz-filter-bot.koyeb.app/")
-DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
-
-POST_MODE= bool(environ.get('POST_MODE', True))
-POST_SHORT_API = environ.get('POST_SHORT_API', '6a0a4f826e12f701a433063ebbe730caa1c29c38')
-POST_SHORT_URL = environ.get('POST_SHORT_URL', 'modijiurl.com')
-
-HOW_TO_POST_SHORT = environ.get('HOW_TO_POST_SHORT', 'https://t.me/Howtodowloa/13')
-
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
