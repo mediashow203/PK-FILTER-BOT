@@ -222,8 +222,12 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+<b> Size ⚙️: {file_size}</b>
+<b> » Nᴇᴡ Uᴘᴅᴀᴛᴇs : @PK_LinkZz
+    » Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 :
+https://t.me/+EmZHSiPLt7xjY2Fl 
 
-<b> Size ⚙️: {file_size}</b>""" 
+◤❤️Jᴏɪɴ : @Roxy_LinkZz◢</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
@@ -441,7 +445,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
  
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
-Testing bot
+@RoxyX_Bot
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
