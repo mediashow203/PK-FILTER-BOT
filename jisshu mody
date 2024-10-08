@@ -1,0 +1,222 @@
+elif query.data == "extra":
+        buttons = [[
+            InlineKeyboardButton('🗝️ Gᴇɴᴇʀᴀᴛᴇ Pᴀꜱꜱᴡᴏʀᴅꜱ 🖍️', callback_data='genpas')
+        ],  [ 
+             InlineKeyboardButton('🔖 Sᴛɪᴄᴋᴇʀ-Iᴅ 🆔 ', callback_data='sticker'),   
+             InlineKeyboardButton('📂 Fɪʟᴇ Sᴛᴏʀᴇ ⬇️', callback_data='store_file') 
+        ],  [ 
+             InlineKeyboardButton('🆎 Fᴏɴᴛ Cʜᴀɴɢᴇ ↺ ', callback_data='font'),   
+             InlineKeyboardButton('⚡ Rᴇᴘᴏ Sᴇᴀʀᴄʜ ⚠️', callback_data='repo') 
+        ],  [
+             InlineKeyboardButton('🎬 Iᴍᴅʙ 🔍', callback_data='imd'),
+             InlineKeyboardButton('📷 Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img') 
+        ],  [
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "forw":
+        buttons = [[
+             InlineKeyboardButton('ʏᴛ-ᴅʟ 📥', callback_data='ytdl'),
+        ],  [ 
+             InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ ⏳', callback_data='filters'),   
+             InlinekeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ ➤', callback_data='share') 
+        ],  [ 
+             InlineKeyboardButton('ꜱᴏɴɢ ▶︎', callback_data='song'),   
+             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
+        ],  [
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
+            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forw1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "forw1":
+        buttons = [[
+             InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🔣', callback_data='gtrl'),
+        ],  [ 
+             InlineKeyboardButton('Tᴇxᴛ Tᴏ Sᴩᴇᴇᴄʜ 🔊', callback_data='tts'),   
+             InlineKeyboardButton('📨 Sʜᴀʀᴇ Tᴇxᴛ ➤', callback_data='share') 
+        ],  [ 
+             InlineKeyboardButton('ꜱᴏɴɢ ', callback_data='song'),   
+             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
+        ],  [
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='forward'),
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "ytdl":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.YTDL_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "share":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.SHARE_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
+    elif query.data == "song":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.SONG_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "json":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.JSON_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "tts":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.TTS_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "gtrl":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.GTRANS_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "store_file":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FILE_STORE_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "sticker":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.STICKER_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "repo":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.REPO_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
